@@ -1,4 +1,4 @@
-package com.tarumzu.nestedradiogroup
+package com.tarumzu.nestedradiogroupsample
 
 import org.junit.Test
 

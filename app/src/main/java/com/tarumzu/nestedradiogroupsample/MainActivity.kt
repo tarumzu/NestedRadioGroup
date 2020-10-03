@@ -1,4 +1,4 @@
-package com.tarumzu.nestedradiogroup
+package com.tarumzu.nestedradiogroupsample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
