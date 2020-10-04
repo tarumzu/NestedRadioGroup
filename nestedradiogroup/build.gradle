@@ -1,5 +1,15 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.9.2'
+    }
+}
+
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 30
@@ -12,7 +22,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+}
+
+publish {
+    userOrg = 'tarumzu'
+    repoName = 'maven'
+    groupId = 'com.tarumzu.nestedradiogroup'
+    artifactId = 'nested-radio-group'
+    publishVersion = '1.0.1'
+    desc = 'RadioGroup that allows you to nest RadioButton in a ViewGroup.'
+    website = 'https://github.com/tarumzu/NestedRadioGroup'
 }
