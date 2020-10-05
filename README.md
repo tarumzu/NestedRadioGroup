@@ -23,6 +23,7 @@ implementation 'com.tarumzu.nestedradiogroup:nested-radio-group:1.0.1'
 
 ```xml
     <com.tarumzu.nestedradiogroup.NestedRadioGroup
+        android:id="@+id/radiogroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,17 +70,31 @@ override fun onCreate(savedInstanceState: Bundle?) {
     setContentView(R.layout.activity_main)
     
     // onClick
-    it.menuLayout.setOnClickListener(object : NestedRadioGroup.OnClickListener {
+    radiogroup.setOnClickListener(object : NestedRadioGroup.OnClickListener {
         override fun onClick(var1: View?) {
-            TODO("Not yet implemented")
+            when (var1?.id) {
+                R.id.radio1 -> {
+                    // radio1
+                }
+                R.id.radio2 -> {
+                    // radio2
+                }
+            }
         }
 
     }
     
     // onCheckedChanged
-    it.menuLayout.setOnCheckedChangeListener(object : NestedRadioGroup.OnCheckedChangeListener {
+    radiogroup.setOnCheckedChangeListener(object : NestedRadioGroup.OnCheckedChangeListener {
         override fun onCheckedChanged(var1: MutableMap<Int, RadioButton>, var2: Int) {
-            TODO("Not yet implemented")
+            when (var2) {
+                R.id.radio1 -> {
+                    // radio1
+                }
+                R.id.radio2 -> {
+                    // radio2
+                }
+            }
         }
 
     }
