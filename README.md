@@ -12,7 +12,7 @@ allprojects {
 ```
     
 ```
-implementation 'com.tarumzu.nestedradiogroup:nested-radio-group:1.0.1'
+implementation 'com.tarumzu.nestedradiogroup:nested-radio-group:1.0.2'
 ```
 
 ## How to use
