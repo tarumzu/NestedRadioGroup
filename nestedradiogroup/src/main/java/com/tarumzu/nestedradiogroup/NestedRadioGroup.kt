@@ -32,7 +32,13 @@ class NestedRadioGroup(context: Context, attrs: AttributeSet) : ConstraintLayout
             child.setOnClickListener {
                 onClickListener?.onClick(it)
             }
-            radioButtons.put(child.id, child)
+            child.id.let {
+                radioButtons.put(it, child)
+                if (child.isChecked) {
+                    radioButtons[it]?.isChecked = true
+                    checkedId = it
+                }
+            }
         } else if (child is ViewGroup) {
             for (i in 0 until child.childCount) {
                 findRadioButtons(child.getChildAt(i))
