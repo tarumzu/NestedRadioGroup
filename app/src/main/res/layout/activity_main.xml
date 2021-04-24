@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-    <com.tarumzu.nestedradiogroup.NestedRadioGroup
+    <com.github.tarumzu.nestedradiogroup.NestedRadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,6 +69,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </com.tarumzu.nestedradiogroup.NestedRadioGroup>
+    </com.github.tarumzu.nestedradiogroup.NestedRadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
