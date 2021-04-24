@@ -29,9 +29,9 @@ dependencies {
 publish {
     userOrg = 'tarumzu'
     repoName = 'maven'
-    groupId = 'com.tarumzu.nestedradiogroup'
+    groupId = 'com.github.tarumzu.nestedradiogroup'
     artifactId = 'nested-radio-group'
-    publishVersion = '1.0.2'
+    publishVersion = '1.0.3'
     desc = 'RadioGroup that allows you to nest RadioButton in a ViewGroup.'
     website = 'https://github.com/tarumzu/NestedRadioGroup'
 }
