@@ -1,4 +1,4 @@
-package com.tarumzu.nestedradiogroup
+package com.github.tarumzu.nestedradiogroup
 
 import android.content.Context
 import android.util.AttributeSet

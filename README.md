@@ -12,7 +12,7 @@ allprojects {
 ```
     
 ```
-implementation 'com.tarumzu.nestedradiogroup:nested-radio-group:1.0.2'
+implementation 'com.github.tarumzu.nestedradiogroup:nested-radio-group:1.0.3'
 ```
 
 ## How to use
@@ -22,7 +22,7 @@ implementation 'com.tarumzu.nestedradiogroup:nested-radio-group:1.0.2'
 - activity_main.xml
 
 ```xml
-    <com.tarumzu.nestedradiogroup.NestedRadioGroup
+    <com.github.tarumzu.nestedradiogroup.NestedRadioGroup
         android:id="@+id/radiogroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@ implementation 'com.tarumzu.nestedradiogroup:nested-radio-group:1.0.2'
                 android:text="radio2"
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.tarumzu.nestedradiogroup.NestedRadioGroup>
+    </com.github.tarumzu.nestedradiogroup.NestedRadioGroup>
 ```
 
 - MainActivity.kt
